@@ -28,6 +28,130 @@
             flex: 100%;
         }
     }
+
+    body {
+        margin: 0;
+    }
+
+    #gal {
+        width: auto;
+        align-items: center;
+        display: flex;
+        position: relative;
+    }
+
+
+
+    #dropdown {
+        position: absolute;
+        display: none;
+        background-color: darkorange;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        width: 8rem;
+        height: auto;
+        box-sizing: border-box;
+        left: 0;
+        top: 100%;
+        border-radius: 5px;
+    }
+
+    #cent {
+        margin: auto;
+        padding: 0.8rem;
+    }
+
+    #gal:hover #dropdown {
+        display: block;
+    }
+
+    #dropdown li {
+        background-color: darkorange;
+        height: 3rem;
+        border-bottom: 1px solid #ffffff;
+        border-radius: 5px;
+    }
+
+    #dropdown li:hover {
+        background-color: darkorange;
+    }
+
+    #dropdown li div:hover>a {
+        color: #23689B;
+        ;
+    }
+
+    #dropdown li a {
+        color: rgb(255, 255, 255);
+    }
+
+    li:hover .dropdown {
+        display: block;
+        top: 3.6rem;
+    }
+
+    @media only screen and (max-width: 600px) {
+        #gal {
+            width: 123%;
+            align-items: center;
+            display: flex;
+            position: relative;
+        }
+
+
+
+        #dropdown {
+            position: absolute;
+            display: none;
+            background-color: darkorange;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            width: 100%;
+            height: auto;
+            box-sizing: border-box;
+            left: 0;
+            top: 100%;
+            border-radius: 0px;
+        }
+
+        #cent {
+            margin: 0;
+            padding: 0;
+        }
+
+        #gal:hover #dropdown {
+            display: block;
+        }
+
+        #dropdown li {
+            background-color: darkorange;
+            height: 3rem;
+            border-bottom: 1px;
+            border-radius: 0px;
+            padding: 1rem;
+        }
+
+        #dropdown li:hover {
+            background-color: darkorange;
+        }
+
+        #dropdown li div:hover>a {
+            color: #23689B;
+            ;
+        }
+
+        #dropdown li a {
+            color: rgb(255, 255, 255);
+            margin: 0;
+        }
+
+        li:hover .dropdown {
+            display: block;
+            top: 3.6rem;
+        }
+    }
 </style>
 
 
@@ -65,7 +189,16 @@
                 </li>
                 <li><a href="./reg.html">Register</a></li>
                 <li><a href="./sponsers.html">Sponsors</a></li>
-                <li><a href="./gallery.html">Gallery</a></li>
+                <li id="gal"><a>&ensp;Gallery&emsp;&#9660;</a>
+                    <ul id="dropdown">
+                        <li>
+                            <div id="cent"><a href="#">AGC 2023</a></div>
+                        </li>
+                        <li>
+                            <div id="cent"><a href="#">AGC 2024</a></div>
+                        </li>
+                    </ul>
+                </li>
             </ul>
         </div>
         <button class="menu_icon">
@@ -171,7 +304,8 @@
                 <br>Please submit your paper in the specified template.
             </p>
 
-            <p class="left" style="margin: 0;"><b>Please submit your paper at <a style="text-decoration:none; color: orange;">AGC2025
+            <p class="left" style="margin: 0;"><b>Please submit your paper at <a
+                        style="text-decoration:none; color: orange;">AGC2025
                         Submission
                         Website
                     </a> on or before the submission dates.</b></p>
@@ -183,7 +317,7 @@
 
     <section id="contact_us">
         <h1 style="border-bottom: 2px solid white;color: white;padding:1%;">Contact Us</h1>
-        <div class="contact" style="display: flex;">
+        <!-- <div class="contact" style="display: flex;">
             <h3 style="color: white;margin-left: 10%;">Conference contacts: </h3>
 
             <div class="ASI_contact">
@@ -223,7 +357,68 @@
                 
             </pre>
             </div>
+        </div> -->
+        <section id="contact-details">
+            <div class="contacts">
+                <h2>Conference Contacts:</h2>
+                <div id="leftrow">
+                    <div class="con">
+                        <p><b>Prof. Suparna Dhar</b></p>
+                        <p style="color: #957d2b;">Email: <a
+                                href="mailto:suparna.dhar@nshm.com">suparna.dhar@nshm.com</a></p>
+                        <p style="color: #957d2b;">Phone: <a href="tel:+919830213143">9830213143</a> / <a
+                                href="tel:+919836206535">9836206535</a></p>
+                    </div>
+                    <div class="con">
+                        <p><b>Dr. Ashutosh Kar</b></p>
+                        <p style="color: #957d2b;">Email: <a
+                                href="mailto:ashutosh.kar@nshm.com">ashutosh.kar@nshm.com</a></p>
+                        <p style="color: #957d2b;">Phone: <a href="tel:+919830213143">p9830213143</a> / <a
+                                href="tel:+919836206535">9836206535</a></p>
+                    </div>
+                    <div class="con">
+                        <p><b>Dr. Swapan Das</b></p>
+                        <p style="color: #957d2b;">Email: <a href="mailto:swapan.das@nshm.com">swapan.das@nshm.com</a>
+                        </p>
+                        <p style="color: #957d2b;">Phone:<a href="tel:+919836206535">9836206535</a></p>
+                    </div>
+                </div>
+                <div id="rightrow">
+                    <div class="con">
+                        <p><b>Prof. Sanjay Goswami</b></p>
+                        <p style="color: #957d2b;">Email: <a href="mailto:sanjay.goswami@nshm.com">
+                                sanjay.goswami@nshm.com</a></p>
+                        <p style="color: #957d2b;">Phone:<a href="tel:+918337034756"> 8337034756</a></p>
+                    </div>
+                    <div class="con">
+                        <p><b>Prof. Madhurima Paul</b></p>
+                        <p style="color: #957d2b;">Email: <a href="mailto:madhurima.paul@nshm.com">
+                                madhurima.paul@nshm.com</a></p>
+                        <p style="color: #957d2b;">Phone:<a href="tel:+918697158972"> 8697158972</a></p>
+                    </div>
+                    <div class="con">
+                        <p><b>Prof. Sangita Mazumdar</b></p>
+                        <p style="color: #957d2b;">Email: <a href="mailto:sangita.mazumdar@nshm.com">
+                                sangita.mazumdar@nshm.com</a></p>
+                        <p style="color: #957d2b;">Phone:<a href="tel:+919831067835"> 9831067835</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="Addr">
+                <h2>ASI Kolkata Chapter</h2>
+                <div id="Address">
+                    <p><b>Address:</b></p>
+                    <p>NSHM Knowledge Campus,<br>
+                        124, 60 BL Saha Road, Tara Park, Behala, Kolkata, PIN - 700053</p>
+                    <p><b>Email:</b><a href="mailto:asi.kolchp@gmail.com"
+                            style="text-decoration: none; color: #b99314;">
+                            asi.kolchp@gmail.com</a></p>
+                </div>
+            </div>
+        </section>
         </div>
+        </div>
+    </section>
     </section>
 
 
@@ -238,6 +433,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="../javascript/image-slider.js"></script>
     <script src="../javascript/agc.js"></script>
+    <script src="../javascript/gallery_click.js"></script>
 </body>
 
 </html>
