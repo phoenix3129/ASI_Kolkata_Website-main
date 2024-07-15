@@ -1641,6 +1641,7 @@ footer img {
         color: #f3f3f3;
         padding-left: 0;
         font-size: x-small;
+        margin: auto;
     }
 
     .contacts {
