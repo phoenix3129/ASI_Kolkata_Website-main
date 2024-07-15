@@ -1642,6 +1642,8 @@ footer img {
         padding-left: 0;
         font-size: x-small;
         margin: auto;
+        width: fit-content;
+        text-align: center;
     }
 
     .contacts {
@@ -1668,4 +1670,3 @@ footer img {
         padding-bottom: 20px;
     }
 }
-
