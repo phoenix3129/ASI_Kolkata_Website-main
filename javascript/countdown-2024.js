@@ -1,5 +1,5 @@
 //! Countdown AGC-2024 Script For HomePage
-var countDownDate = new Date("March 6, 2024 00:00:00").getTime();
+var countDownDate = new Date("March 7, 2025 00:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function () {
