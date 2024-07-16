@@ -54,7 +54,7 @@ body {
 
 .container .gallery-box .row-1 img {
     width: 100%;
-    height: 50%;
+    /* height: 50%; */
     /* padding-bottom: 3.5%; */
     margin-bottom: 3.5%;
     transition: all 0.2s ease-in-out;
