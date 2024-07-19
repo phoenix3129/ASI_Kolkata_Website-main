@@ -11,7 +11,6 @@ Lets Make Our AGC Event Great Together🙂
 - Programchair Added.
 - AGC2024 gallery added.
 
-
 ## v4.10.2
 - Schedule updated
 
