@@ -22,6 +22,7 @@
 
     /* Responsive layout - makes a one column-layout instead of a two-column layout */
     @media (max-width: 800px) {
+
         .flex-item-right,
         .flex-item-left {
             flex: 100%;
@@ -50,7 +51,8 @@
     <header>
         <a href="../index.html"><img src="../media/logo.png" alt=""></a>
         <h2 style="color: darkorange;"><img src="../media/AGC2024.png" alt="">Analytics Global Conference 2024</h2>
-        <a class="society-logo" href="https://www.analytics-india.com/"><img class="ASI-logo-right" src="../media/asi-removebg-preview.png"  alt="image"></a>
+        <a class="society-logo" href="https://www.analytics-india.com/"><img class="ASI-logo-right"
+                src="../media/asi-removebg-preview.png" alt="image"></a>
     </header>
     <nav class="navbar nav_res">
         <div class="navigation visible">
@@ -63,7 +65,16 @@
                 </li>
                 <li><a href="./reg.html">Register</a></li>
                 <li><a href="./sponsers.html">Sponsors</a></li>
-                <li><a href="./gallery.html">Gallery</a></li>
+                <li id="gal"><a>&ensp;Gallery&emsp;&#9660;</a>
+                    <ul id="dropdown">
+                        <li>
+                            <div id="cent"><a href="../pages/gallery.html">AGC2023</a></div>
+                        </li>
+                        <li>
+                            <div id="cent"><a href="../AGC2025/gallery.html">AGC2024</a></div>
+                        </li>
+                    </ul>
+                </li>
             </ul>
         </div>
         <button class="menu_icon">
@@ -236,6 +247,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="../javascript/image-slider.js"></script>
     <script src="../javascript/agc.js"></script>
+    <script src="../javascript/gallery_click.js"></script>
 </body>
 
 </html>

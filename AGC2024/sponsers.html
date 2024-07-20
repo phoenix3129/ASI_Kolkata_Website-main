@@ -1,35 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-    <style>
-        .flex-container {
-          display: flex;
-          flex-wrap: wrap;
-          font-size: 30px;
-          text-align: center;
-          margin: 4% 0% 0% 5%;
-        }
-        
+<style>
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 30px;
+        text-align: center;
+        margin: 4% 0% 0% 5%;
+    }
+
+    .flex-item-left {
+
+        padding: 5px 10px 20px 10px;
+
+        flex: 25%;
+
+    }
+
+    .flex-item-right {
+
+        padding: 10px;
+        flex: 25%;
+    }
+
+    /* Responsive layout - makes a one column-layout instead of a two-column layout */
+    @media (max-width: 800px) {
+
+        .flex-item-right,
         .flex-item-left {
-         
-          padding: 5px 10px 20px 10px;
-
-          flex: 25%;
-
-        }
-        
-        .flex-item-right {
-         
-          padding: 10px;
-          flex: 25%;
-        }
-        
-        /* Responsive layout - makes a one column-layout instead of a two-column layout */
-        @media (max-width: 800px) {
-          .flex-item-right, .flex-item-left {
             flex: 100%;
-          }
         }
-        </style>
+    }
+</style>
 
 <head>
     <meta charset="UTF-8">
@@ -50,7 +52,8 @@
     <header>
         <a href="../index.html"><img src="../media/logo.png" alt=""></a>
         <h2 style="color: darkorange;"><img src="../media/AGC2024.png" alt="">Analytics Global Conference 2024</h2>
-        <a class="society-logo" href="https://www.analytics-india.com/"><img class="ASI-logo-right" src="../media/asi-removebg-preview.png"  alt="image"></a>
+        <a class="society-logo" href="https://www.analytics-india.com/"><img class="ASI-logo-right"
+                src="../media/asi-removebg-preview.png" alt="image"></a>
     </header>
     <nav class="navbar nav_res">
         <div class="navigation visible">
@@ -63,7 +66,16 @@
                 <li><a href="./sponsers.html"
                         style="font-weight: 900;color: #23689B; font-size:1.4rem; text-decoration: none;">Sponsors</a>
                 </li>
-                <li><a href="./gallery.html">Gallery</a></li>
+                <li id="gal"><a>&ensp;Gallery&emsp;&#9660;</a>
+                    <ul id="dropdown">
+                        <li>
+                            <div id="cent"><a href="../pages/gallery.html">AGC2023</a></div>
+                        </li>
+                        <li>
+                            <div id="cent"><a href="../AGC2025/gallery.html">AGC2024</a></div>
+                        </li>
+                    </ul>
+                </li>
             </ul>
         </div>
         <button class="menu_icon">
@@ -102,27 +114,30 @@
     <section id="Patners" style="display: flex; flex-direction: column;">
         <h1>Academic partners</h1>
         <div class="flex-container">
-            <div class="flex-item-left">            <img src="../media/nshmLogo.png" alt="nshm" style="height: auto; width:150px">
+            <div class="flex-item-left"> <img src="../media/nshmLogo.png" alt="nshm" style="height: auto; width:150px">
             </div>
-            <div class="flex-item-left">            <img src="../media/tcs.png" alt=""style="height:150px;width:350px">
-            </div> 
-            <div class="flex-item-left">            <img src="../media/Springer_logo.jpeg" alt=""style="height:100px;width:300px"> 
+            <div class="flex-item-left"> <img src="../media/tcs.png" alt="" style="height:150px;width:350px">
             </div>
-            <div class="flex-item-left">            <img src="../media/FriendsFM.PNG" alt=""style="height:100px;width:300px; margin-top: 20px;"> 
+            <div class="flex-item-left"> <img src="../media/Springer_logo.jpeg" alt="" style="height:100px;width:300px">
             </div>
-            <div class="flex-item-left">            <img src="../media/The Telegraph Online Edugraph Logo White Background.png" alt=""style="height:100px;width:300px"> 
-            </div> 
-            <div class="flex-item-left">            <img src="../media/RS Software.png" alt=""style="height:100px;width:300px"> 
-            </div> 
-          </div>
+            <div class="flex-item-left"> <img src="../media/FriendsFM.PNG" alt=""
+                    style="height:100px;width:300px; margin-top: 20px;">
+            </div>
+            <div class="flex-item-left"> <img src="../media/The Telegraph Online Edugraph Logo White Background.png"
+                    alt="" style="height:100px;width:300px">
+            </div>
+            <div class="flex-item-left"> <img src="../media/RS Software.png" alt="" style="height:100px;width:300px">
+            </div>
+        </div>
 
     </section>
 
-    <h1 style="font-size: x-large;margin: 4% 0% 0% 5%;max-height: 2em;border-left: 9px solid darkorange;padding: 1%;">Sponsorship</h1>
+    <h1 style="font-size: x-large;margin: 4% 0% 0% 5%;max-height: 2em;border-left: 9px solid darkorange;padding: 1%;">
+        Sponsorship</h1>
     <section id="Sponsers" style="display: flex;flex-direction: column; margin-left:10%">
-    
+
         <div>
-        <p>Sponsorship Categories</p>
+            <p>Sponsorship Categories</p>
         </div>
 
         <table>
@@ -162,11 +177,12 @@
                 <td></td>
             </tr>
         </table>
-        </section>
-<section>
+    </section>
+    <section>
         <p>
 
-            <b style="font-size: 22px;border-left: 5px solid white; margin: 4% 0% 0% 9%;max-height: 2em;padding: 1%;">Other options:</b>
+            <b style="font-size: 22px;border-left: 5px solid white; margin: 4% 0% 0% 9%;max-height: 2em;padding: 1%;">Other
+                options:</b>
         <ul style="font-size: x-large; margin-left: 12%;">
             <li>Venue (Day 1)</li>
             <li>Venue (Day 2)</li>
@@ -179,7 +195,8 @@
             <li>Invitee dinner</li>
             <li>Event management</li>
         </ul>
-        <p style="font-size:x-large; margin-left: 10%;">Sponsorship is now open. Please contact <a href="mailto:suparna.dhar@nshm.com">suparna.dhar@nshm.com</a></p>
+        <p style="font-size:x-large; margin-left: 10%;">Sponsorship is now open. Please contact <a
+                href="mailto:suparna.dhar@nshm.com">suparna.dhar@nshm.com</a></p>
 
         </p>
     </section>
@@ -241,6 +258,7 @@ Email
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="../javascript/image-slider.js"></script>
     <script src="../javascript/agc.js"></script>
+    <script src="../javascript/gallery_click.js"></script>
 
 </body>
 

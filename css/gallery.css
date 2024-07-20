@@ -184,7 +184,7 @@ body {
 }
 
 .box a {
-    font-size: 1.8vw;
+    /* font-size: 1.8vw; */
     text-decoration: none;
     color: #23689B;
     font-weight: 500;
