@@ -9,7 +9,7 @@ Lets Make Our AGC Event Great Together🙂
 ## v4.10.3
 - AGC2025 pages added.
 - Programchair Added.
-- AGC2024 gallery added.
+- AGC2024 gallery added.(the file is contained in AGC2025 Folder, It is advised to transfer it to AGC2024 Folder and link to navbars in the next update)
 
 ## v4.10.2
 - Schedule updated
