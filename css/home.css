@@ -36,8 +36,8 @@ body {
 }
 
 .logo {
-    margin-left: 2%;
-    width: 28%;
+    margin-left: 1vw;
+    width: fit-content;
 }
 
 /* color: darkred; */
@@ -52,6 +52,7 @@ body {
 
 .logo img {
     max-width: 65%;
+    width: 55vh;
     /* width: 107px; */
 
     /* padding: 7px 0px;*/
