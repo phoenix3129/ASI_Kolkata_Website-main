@@ -554,6 +554,40 @@ footer img {
     /* margin-top: -4%; */
 }
 
+#rch-track,
+#std-track {
+    width: auto;
+    /* adjust the width as needed */
+    margin: 20px;
+    /* add some margin for better alignment */
+}
+
+#rch-btn,
+#std-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: darkorange;
+    color: #fff;
+    cursor: pointer;
+}
+
+#rch-btn:hover,
+#std-btn:hover {
+    background-color: #f07400;
+}
+
+#rch-txt,
+#std-txt {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+}
+
 #SubTopics {
     display: flex;
     flex-direction: column;
