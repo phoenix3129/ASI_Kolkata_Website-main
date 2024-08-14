@@ -629,7 +629,7 @@ footer img {
 }
 
 .toggle-button {
-    height: 5vh;
+    /* height: 5vh; */
     margin-left: auto;
     margin-right: auto;
     background-color: darkorange;
