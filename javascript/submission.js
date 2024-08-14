@@ -1,30 +1,21 @@
-let rchTxtVisible = false;
-let stdTxtVisible = false;
+function toggleContent(button) {
+  const contentBox = button.parentElement;
+  const allContentBoxes = document.querySelectorAll('.content-box');
 
-document.getElementById("rch-btn").addEventListener("click", function() {
-  if (stdTxtVisible) {
-    document.getElementById("std-txt").style.display = "none";
-    stdTxtVisible = false;
-  }
-  if (rchTxtVisible) {
-    document.getElementById("rch-txt").style.display = "none";
-    rchTxtVisible = false;
-  } else {
-    document.getElementById("rch-txt").style.display = "block";
-    rchTxtVisible = true;
-  }
-});
+  // Collapse all other content boxes
+  allContentBoxes.forEach(box => {
+    if (box !== contentBox && box.classList.contains('expanded')) {
+      box.classList.remove('expanded');
+      box.querySelector('.toggle-button').textContent = 'Show More';
+    }
+  });
 
-document.getElementById("std-btn").addEventListener("click", function() {
-  if (rchTxtVisible) {
-    document.getElementById("rch-txt").style.display = "none";
-    rchTxtVisible = false;
-  }
-  if (stdTxtVisible) {
-    document.getElementById("std-txt").style.display = "none";
-    stdTxtVisible = false;
+  // Toggle the clicked content box
+  if (contentBox.classList.contains('expanded')) {
+    contentBox.classList.remove('expanded');
+    button.textContent = 'Show More';
   } else {
-    document.getElementById("std-txt").style.display = "block";
-    stdTxtVisible = true;
+    contentBox.classList.add('expanded');
+    button.textContent = 'Show Less';
   }
-});
+}
