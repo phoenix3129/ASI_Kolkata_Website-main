@@ -636,6 +636,8 @@ footer img {
     z-index: 1;
     /* Ensure it sits above the blur */
     position: relative;
+    margin-left: 45%;
+    margin-right: 45%;
 }
 
 .content-box.expanded .content-text {
