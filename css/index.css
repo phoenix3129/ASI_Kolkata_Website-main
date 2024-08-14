@@ -594,6 +594,8 @@ footer img {
 }
 
 .content-box {
+    display: flex;
+    flex-direction: column;
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -602,6 +604,7 @@ footer img {
     padding-bottom: 8px;;
     position: relative;
     overflow: hidden;
+    justify-content: center;
 }
 
 .content-text {
@@ -626,6 +629,9 @@ footer img {
 }
 
 .toggle-button {
+    height: 5vh;
+    margin-left: auto;
+    margin-right: auto;
     background-color: darkorange;
     color: #fff;
     border: none;
@@ -636,8 +642,6 @@ footer img {
     z-index: 1;
     /* Ensure it sits above the blur */
     position: relative;
-    margin-left: 45%;
-    margin-right: 45%;
 }
 
 .content-box.expanded .content-text {
