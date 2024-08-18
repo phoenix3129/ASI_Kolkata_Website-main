@@ -645,7 +645,7 @@ footer img {
 }
 
 .content-box.expanded .content-text {
-    max-height: 1000px;
+    max-height: max-content;
     /* Enough to show the entire content */
 }
 
