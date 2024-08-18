@@ -144,7 +144,8 @@
                         <ul class="first-ul">
                             <li>Dr. Dinesh Kumar, Professor, IIM Bangalore</li>
                             <li>Dr. Indranil Bose, Distinguished Professor, NEOMA Business School</li>
-                            <li>Prof. Xi Chen, Professor, Zhejiang University(<a style="text-decoration:underline; color: orange;"
+                            <li>Prof. Xi Chen, Professor, Zhejiang University(<a
+                                    style="text-decoration:underline; color: orange;"
                                     href="https://person.zju.edu.cn/en/chenxi_en">Zhejiang University Personal
                                     homepage</a>)</li>
                             <li>Dr. Rameshwar Dubey, Professor, Montpellier Business School,Reader, Doctoral School
@@ -217,7 +218,8 @@
                             Submission Deadline: December 31, 2024<br>
                             Acceptance Notification: January 15, 2025
                         </div>
-                        <p><b>Selected papers will be published in Vishleshikaa - The annual journal of ASI Kolkata Chapter
+                        <p><b>Selected papers will be published in Vishleshikaa - The annual journal of ASI Kolkata
+                                Chapter
                                 bearing
                                 ISBN.
                             </b></p>
@@ -355,6 +357,33 @@
     </footer>
 
     <!--  -    -  Javascripts    -  -     -   - -  --->
+    <script>
+        function toggleContent(button) {
+            const contentBox = button.parentElement;
+            const allContentBoxes = document.querySelectorAll('.content-box');
+
+            // Prevent the button from causing a focus shift that could cause a scroll
+            button.blur();
+
+            // Collapse all other content boxes
+            allContentBoxes.forEach(box => {
+                if (box !== contentBox && box.classList.contains('expanded')) {
+                    box.classList.remove('expanded');
+                    box.querySelector('.toggle-button').textContent = 'Show More';
+                }
+            });
+
+            // Toggle the clicked content box
+            if (contentBox.classList.contains('expanded')) {
+                contentBox.classList.remove('expanded');
+                button.textContent = 'Show More';
+            } else {
+                contentBox.classList.add('expanded');
+                button.textContent = 'Show Less';
+            }
+        }
+
+    </script>
     <script src="../javascript/dropdown.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="../javascript/image-slider.js"></script>
