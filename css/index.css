@@ -450,7 +450,7 @@ footer img {
 
 #programchairs {
     color: darkorange;
-    font-size: 50px;
+    font-size: 43px;
     margin-top: 0%;
     margin-left: 3%;
 }
@@ -590,7 +590,7 @@ footer img {
 
 .blur-overlay {
     /* Use a more descriptive variable for bottom position */
-    --overlay-bottom: 50px;
+    --overlay-bottom: 50px; 
     position: absolute;
     bottom: var(--overlay-bottom);
     left: 0;
