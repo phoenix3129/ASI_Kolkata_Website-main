@@ -545,6 +545,11 @@ footer img {
 }
 
 /*****SUBMISSION PAGE****/
+#proc a img {
+    width: 23%;
+    margin: auto;
+}
+
 .content {
     /* padding: 50px; */
     padding: 0 50px;
@@ -552,40 +557,6 @@ footer img {
     font-size: 1.4rem;
     margin-top: 2%;
     /* margin-top: -4%; */
-}
-
-#rch-track,
-#std-track {
-    width: auto;
-    /* adjust the width as needed */
-    margin: 20px;
-    /* add some margin for better alignment */
-}
-
-#rch-btn,
-#std-btn {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: darkorange;
-    color: #fff;
-    cursor: pointer;
-}
-
-#rch-btn:hover,
-#std-btn:hover {
-    background-color: #f07400;
-}
-
-#rch-txt,
-#std-txt {
-    width: 100%;
-    padding: 10px;
-    margin-top: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    resize: vertical;
 }
 
 .content-container {
@@ -601,29 +572,34 @@ footer img {
     border-radius: 8px;
     margin-bottom: 20px;
     padding: 20px;
-    padding-bottom: 8px;;
+    padding-bottom: 8px;
     position: relative;
     overflow: hidden;
     justify-content: center;
 }
 
 .content-text {
-    max-height: 200px;
+    /* Use a more descriptive variable for max-height */
+    --max-height: 200px;
+    max-height: var(--max-height);
     overflow: hidden;
     position: relative;
     z-index: 1;
-    transition: max-height 0.3s ease;
+    transition: max-height 1s ease;
 }
 
 .blur-overlay {
+    /* Use a more descriptive variable for bottom position */
+    --overlay-bottom: 50px;
     position: absolute;
-    bottom: 50px;
-    /* Adjusted to position just above the button */
+    bottom: var(--overlay-bottom);
     left: 0;
     width: 100%;
     height: 40px;
-    background: linear-gradient(transparent, rgba(207, 204, 204, 0.8));
-    transition: opacity 0.3s ease;
+    /* Use a more descriptive variable for background color */
+    --overlay-color: rgba(207, 204, 204, 0.8);
+    background: linear-gradient(transparent, var(--overlay-color));
+    transition: opacity 1s ease;
     z-index: 1;
     /* Ensure it sits above the text */
 }
@@ -657,11 +633,12 @@ footer img {
     background-color: #c65600;
 }
 
-.grid-container{
+.grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
 }
+
 #SubTopics {
     display: flex;
     flex-direction: column;
@@ -694,6 +671,46 @@ footer img {
 
 .imp-dates {
     padding-bottom: 1%;
+}
+
+#ed-cont {
+    display: flex;
+    flex-direction: row;
+}
+
+#ed-list {
+    min-width: 70%;
+    max-width: 75%;
+
+}
+
+#spr-logo {
+    max-width: 20%;
+    z-index: 3;
+}
+
+#spr-logo img {
+    max-width: 100%;
+}
+
+#spr-subm {
+    max-width: 50%;
+    margin: auto;
+}
+
+#spr-img {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+#spr-img a {
+    margin: auto;
+}
+
+#spr-img a img {
+    max-width: 45%;
+    margin: auto;
 }
 
 /****REGISTRATION PAGE******/
@@ -1327,11 +1344,27 @@ footer img {
         flex-direction: column;
     }
 
+    #ed-cont {
+        flex-direction: column;
+    }
+
+    #ed-list {
+        max-width: 100%;
+    }
+
+    #spr-logo {
+        max-width: 65%;
+        display: flex;
+        margin: auto;
+    }
+
     #SubTopics img {
         margin: 0;
         max-width: 90%;
     }
-
+#proc a img{
+    width: 55%;
+}
     /****register page******/
     .register-here {
         max-width: 26%;
