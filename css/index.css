@@ -281,6 +281,15 @@ li:hover .dropdown {
     margin: auto;
     width: 70%;
 }
+/* International committee */
+.int-committee{
+    padding: 0% 0% 0% 5%;
+}
+
+.int-committee ul {
+    font-size: x-large;
+    width: 100%;
+}
 
 /* Organizing committee  */
 .committee {
