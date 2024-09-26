@@ -1244,6 +1244,9 @@ footer img {
         font-size: 28px;
         padding: 1%;
     }
+    #int-com{
+        font-size: medium;
+    }
 
     .sectionsubtag {
         font-size: 3vw;
