@@ -1244,8 +1244,11 @@ footer img {
         font-size: 28px;
         padding: 1%;
     }
+    .int-committee{
+        margin: 0% 2% 0% -5%;
+    }
     #int-com{
-        font-size: medium;
+        font-size: 90%;
     }
 
     .sectionsubtag {
